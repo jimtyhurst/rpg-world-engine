@@ -14,10 +14,6 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 keywords = ["rpg", "game", "role playing"]
-[project.urls]
-"Source" = "https://github.com/jimtyhurst/rpg-world-engine.git"
-"Bug Tracker" = "https://github.com/jimtyhurst/rpg-world-engine/issues"
-
 dependencies = [
     "python-dotenv>=1.0.1",
 ]
@@ -28,6 +24,10 @@ dev = [
     "pytest>=8.3.4",
     "ruff>=0.8.3",
 ]
+
+[project.urls]
+"Source" = "https://github.com/jimtyhurst/rpg-world-engine.git"
+"Bug Tracker" = "https://github.com/jimtyhurst/rpg-world-engine/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
