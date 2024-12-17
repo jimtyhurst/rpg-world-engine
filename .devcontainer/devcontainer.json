@@ -1,0 +1,38 @@
+// The Dev Container format allows you to configure your environment. At the heart of it
+// is a Docker image or Dockerfile which controls the tools available in your environment.
+//
+// See https://aka.ms/devcontainer.json for more information.
+{
+	"name": "Python 3",
+	// Use "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+	// "image": "mcr.microsoft.com/devcontainers/python:3.13",
+	// instead of the build to use a pre-built image.
+	// "build": {
+    //     "context": ".",
+    //     "dockerfile": "Dockerfile"
+    // },
+	
+	// Features add additional features to your environment. See https://containers.dev/features
+	// Beware: features are not supported on all platforms and may have unintended side-effects.
+	"features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"github.vscode-github-actions"
+			]
+		}
+	},
+
+	// This does not seem to get executed ... Why?
+	// I want to create .venv and install dependencies there.
+	"postCreateCommand": {
+		"uv venv --python 3.13.1; source .venv/bin/activate; uv sync":[]
+	}
+}
+
