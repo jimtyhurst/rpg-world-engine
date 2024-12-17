@@ -1,0 +1,48 @@
+[project]
+name = "rpg-world-engine"
+version = "0.1.0"
+description = "Builds and runs text-based Role-Playing Games, moderated by a Large Language Model."
+authors = [
+    { name="Jim Tyhurst", email="jim@tyhurst.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["rpg", "game", "role playing"]
+[project.urls]
+"Source" = "https://github.com/jimtyhurst/rpg-world-engine.git"
+"Bug Tracker" = "https://github.com/jimtyhurst/rpg-world-engine/issues"
+
+dependencies = [
+    "python-dotenv>=1.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.4",
+    "ruff>=0.8.3",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
