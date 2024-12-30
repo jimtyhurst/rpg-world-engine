@@ -15,6 +15,7 @@ classifiers = [
 ]
 keywords = ["rpg", "game", "role playing"]
 dependencies = [
+    "google-genai>=0.3.0",
     "google-generativeai>=0.8.3",
     "python-dotenv>=1.0.1",
 ]
