@@ -85,6 +85,13 @@ facilitating an adventure.
         However, they are additional examples of using a large foundational
         generative model for creating an interactive game world.
 
+## Development environment
+
+### To display logging during `pytest`
+```shell
+uv run pytest --log-cli-level=DEBUG
+```
+
 ## Code of Conduct
 
 See the [Code of Conduct](./CODE_OF_CONDUCT.md) for project participants and
