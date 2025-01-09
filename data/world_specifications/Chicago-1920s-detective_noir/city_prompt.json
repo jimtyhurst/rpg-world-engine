@@ -1,0 +1,11 @@
+{
+  "category_map": {
+    "world": "city",
+    "region": "neighborhood",
+    "locale": "place"
+  },
+  "world_prompt": {
+    "contents": "Write a few paragraphs of fiction based on the actual city of Chicago in the United States in the 1920s. In your story, the city has a corrupt government. Gangsters on the North Side are making a lot of money from bootleg liquor during Prohibition. Mrs. Lucille Robinson has hired Detective Harston Cooper to find her missing husband, Roland Robinson.",
+    "system_instruction": "You are a creative writer, using a detective noir style. Provide the response as JSON in this format: {"city": {"name": "<NAME>", "description": "<DESCRIPTION>", "atmosphere": "<ATMOSPHERE>", "mood": "<MOOD>"}}"
+  }
+}

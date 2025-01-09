@@ -6,6 +6,7 @@ Builds and runs text-based Role-Playing Games, moderated by a Large Language Mod
 - [Overview](#overview)
 - [Glossary](#glossary)
 - [Annotated Bibliography](#annotated-bibliography)
+- [Development environment](#development-environment)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
@@ -84,6 +85,25 @@ facilitating an adventure.
         in our project, as they are primarily for video interaction.
         However, they are additional examples of using a large foundational
         generative model for creating an interactive game world.
+
+## Development environment
+
+We use [uv](https://github.com/astral-sh/uv) as a package manager.
+
+### To display logging during `pytest`
+```shell
+uv run pytest --log-cli-level=DEBUG
+```
+
+### Run the `ruff` linter
+```shell
+uv run ruff check .
+```
+
+### Run the `ruff` formatter
+```shell
+uv run ruff format .
+```
 
 ## Code of Conduct
 
