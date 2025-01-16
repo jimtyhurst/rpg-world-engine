@@ -1,3 +1,8 @@
+"system instructions": "You are the Game Master for a role playing game (RPG). You use a detective noir style of writing when you describe people and places. Provide the response as JSON in this format: {\"player\": {\"name\": \"<NAME>\", \"description\": \"<DESCRIPTION>\"}}",
+
+"prompt":
+Given the game world described below between the <WORLD> tags, write a description for the main character, Private Detective Jordan Johnson. Mention that he is a good, trustworthy private detective, but he does not make much money. It has been a while since he last had a client. Most people in this town are not looking for an honest detective.
+<WORLD>
 {
   "city": {
     "name": "Chicago",
@@ -54,7 +59,7 @@
     },
     {
       "name": "The Loop",
-      "description": "The Loop was the beating heart of Chicago, a place where the city's ambition took physical form. Towering office buildings scraped the sky, and the streets were a maelstrom of traffic and pedestrians. The El screeched its way through the grid, a constant reminder of the city's relentless pace. The Loop's many movie palaces promised an escape, but even within their gilded walls, the hustle and bustle of the city could still be felt. The city's elite gathered in the grand hotels and posh restaurants, while back-alley deals were struck in the shadows. The Loop was a place where money flowed freely, where the ambitious came to make their fortunes, and where the city's undercurrent of corruption was always just a whisper away.",
+     "description": "The Loop was the beating heart of Chicago, a place where the city's ambition took physical form. Towering office buildings scraped the sky, and the streets were a maelstrom of traffic and pedestrians. The El screeched its way through the grid, a constant reminder of the city's relentless pace. The Loop's many movie palaces promised an escape, but even within their gilded walls, the hustle and bustle of the city could still be felt. The city's elite gathered in the grand hotels and posh restaurants, while back-alley deals were struck in the shadows. The Loop was a place where money flowed freely, where the ambitious came to make their fortunes, and where the city's undercurrent of corruption was always just a whisper away.",
       "atmosphere": "Fast-paced, chaotic, and glamorous. A constant sense of movement and a feeling of ambition hangs in the air.",
         "mood": "Restless and energetic, a place where anything seems possible, yet the potential for corruption lurks in every corner."
       "places": [
@@ -65,46 +70,16 @@
         },
         {
           "name": "The Palmer House Hotel",
-          "neighborhood": "The Loop",
+           "neighborhood": "The Loop",
           "description": "A grand hotel with a marble lobby and uniformed doormen, where the city's elite gather to conduct their business and flaunt their wealth. The air is thick with the scent of expensive cigars and hushed conversations, a place where deals are made and secrets are kept. It's a place where power lives."
         },
         {
-          "name": "The Broker's Back Alley",
-          "neighborhood": "The Loop",
+           "name": "The Broker's Back Alley",
+           "neighborhood": "The Loop",
           "description": "A narrow, grimy alley tucked behind the towering office buildings. The air is thick with the smell of stale garbage and damp brick. It’s a place where back-alley deals are made, hushed conversations are had, and the underbelly of the Loop becomes visible. It's the place where the fat cats come to get their hands dirty."
         }
       ],
     }
-  ],
-  "player":
-    {
-      "name": "Jordan Johnson",
-      "description": "Jordan Johnson was a man etched by the city. His trench coat was rumpled, his fedora slightly askew, and a permanent weariness seemed to cling to his eyes. He was a good, trustworthy private detective, one of the few in this town. But honesty didn't pay the bills in Chicago, especially not in 1927. It had been a while since anyone had walked through his office door with a case, and his rent was starting to weigh on him like the city's oppressive air. Most people around here were not looking for an honest detective. They were looking for someone who could help them hide their dirty laundry, and Jordan just wasn't that kind of man. But he clung to his principles, a flickering candle in the city's unending night."
-    },
-  "npcs": [
-    {
-      "name": "Dean 'The Hammer' O'Banion",
-      "description": "O'Banion, a cold-eyed Irishman with a voice like gravel and a penchant for violence, is the king of the North Side's illegal booze trade. He’s a man who prefers a direct approach, his knuckles doing most of the talking. He’s built like a brick outhouse, and his hands look like they’ve seen more than their fair share of action. You can always spot him by the way his eyes scan a room, looking for threats both real and perceived."
-    },
-    {
-      "name": "Hymie 'The Weasel' Weiss",
-      "description": "Weiss, a slender man with sharp features and a nervous energy, is O'Banion's primary rival. His mind is as quick as his hands, and he prefers to operate in the shadows, letting his schemes and double-crosses do the heavy lifting. He's known to be a tricky character, as hard to pin down as a greased pig. You’ll find him in the seedier parts of the North Side, his eyes darting from shadow to shadow."
-    },
-    {
-      "name": "Irving 'The Ledger' Lipshitz",
-      "description": "Lipshitz, a balding man with thick glasses and a perpetually worried expression, is O’Banion's accountant. He’s a man who knows the secrets of the books, and he’s not above skimming a little off the top for himself. He's never seen without a ledger and a pencil, and his nervous tic of constantly adjusting his glasses doesn't inspire confidence. It's a safe bet Lipshitz is as crooked as the day is long."
-    },
-    {
-      "name": "Detective 'Sly' Mikey Malone",
-      "description": "Malone, a burly man with a loosened tie and a cynical smirk, is a cop on the take. He's seen enough of the city's underbelly to know that everyone's got a price, and he's not shy about making sure he gets his cut. You can see the corruption in the way he holds his gaze, lingering a second or two too long, assessing you and what you might be worth to him. The city keeps its secrets close, and so does he."
-    },
-    {
-      "name": "Mrs. Lucille Robinson",
-      "description": "Mrs. Robinson is a woman of the city's elite. She carries herself with an air of elegance, her every movement graceful, and her clothes scream of money. But behind the polished exterior, there's a hint of boredom and a touch of something colder. She’s the kind of woman who might be more dangerous than any gangster, all the while sipping tea in a grand hotel."
-    },
-    {
-      "name": "Harold Robinson",
-      "description":"Harold Robinson is a man of numbers and routine, a creature of habit. As a bank manager, he's built his life on stability and security, but it’s easy to see that the monotony has started to wear on him. He looks like he’d rather be anywhere other than the stuffy confines of his banking world. There is a sadness in his eyes that suggests he might want more out of life than his wife and his bank account offer him."
-    }
   ]
 }
+</WORLD>
