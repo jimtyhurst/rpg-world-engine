@@ -1,0 +1,49 @@
+{
+  "places": [
+    {
+      "name": "The Kielbasa King",
+      "neighborhood": "North Side",
+      "description": "A small, dimly lit storefront on Devon Avenue, smelling of smoked meats and old spices. The counter is worn smooth from years of elbows, and the owner, a burly man with a handlebar mustache, keeps a watchful eye on everyone who walks in. They serve up kielbasa so good it makes you forget the world, but I wouldn't be surprised if they have another menu they don't show to just anyone."
+    },
+    {
+      "name": "O'Banion's Back Room",
+       "neighborhood": "North Side",
+      "description": "Tucked away in an alley behind a seemingly harmless flower shop. The only entrance is a nondescript door with a small, sliding peephole. Inside, it's smoky and dimly lit, the air thick with the smell of stale beer and illicit deals. It's where O'Banion’s boys meet to discuss business, and no outsider is welcome, unless of course you have something to offer."
+    },
+    {
+       "name": "West Ridge Apartments",
+       "neighborhood": "North Side",
+      "description": "A new apartment building on the edge of West Ridge, its facade trying to project an air of respectability. But the whispers of late-night comings and goings and the sight of unmarked cars parked nearby suggest that its residents are not all law-abiding citizens. I'd bet if you pushed hard enough you'd find Joe Aiello or Jack Zuta running things here."
+     },
+    {
+      "name": "The Blue Note Speakeasy",
+       "neighborhood": "South Side",
+      "description": "A smoky basement club on the South Side, hidden behind a butcher shop. The air is thick with the sounds of blues music, a mournful wail that seems to echo the struggles of the neighborhood. The bartender, a wiry man with a permanent squint, serves up cheap hooch that could knock you on your behind but the music keeps you coming back for more."
+    },
+    {
+      "name": "South Side Steel Mill",
+       "neighborhood": "South Side",
+      "description": "A hulking, monstrous structure belching smoke and fire into the sky. The rhythmic clang of metal echoes through the streets, a constant reminder of the city's industrial heart. I would not want to work here, the heat would melt a man down before the night was through but its here that men make their living."
+    },
+    {
+      "name": "The Lithuanian Community Center",
+       "neighborhood": "South Side",
+      "description": "A bustling gathering place in the heart of the Lithuanian neighborhood, the smell of homemade pierogies and fresh-baked bread always seems to fill the air. It's a place where families come to celebrate traditions and share the burdens of their hard lives. It's the heart of the community, the place where families rely on one another to make it through each day."
+     },
+   {
+      "name": "The Paramount Movie Palace",
+      "neighborhood": "The Loop",
+      "description": "A gilded palace of dreams, its entrance lit up with flashing lights and beckoning posters. Inside, the air is thick with the smell of popcorn and perfume, a temporary escape from the harsh realities of the city. But even amidst the glamour, you can feel the undercurrent of the city's pulse."
+    },
+    {
+      "name": "The Palmer House Hotel",
+       "neighborhood": "The Loop",
+      "description": "A grand hotel with a marble lobby and uniformed doormen, where the city's elite gather to conduct their business and flaunt their wealth. The air is thick with the scent of expensive cigars and hushed conversations, a place where deals are made and secrets are kept. It's a place where power lives."
+    },
+    {
+       "name": "The Broker's Back Alley",
+       "neighborhood": "The Loop",
+      "description": "A narrow, grimy alley tucked behind the towering office buildings. The air is thick with the smell of stale garbage and damp brick. It’s a place where back-alley deals are made, hushed conversations are had, and the underbelly of the Loop becomes visible. It's the place where the fat cats come to get their hands dirty."
+    }
+  ]
+}

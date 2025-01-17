@@ -5,7 +5,7 @@
     "locale": "place"
   },
   "locale_prompt": {
-    "contents": "Given the description of Chicago and its neighborhoods above, describe three places in each neighborhood. For example, restaurants, bars, parks, movie theaters, offices, whatever seems appropriate given the description of the neighborhood.",
+    "contents": "Given the description of Chicago and its neighborhoods surrounded by triple quotes (""") below, describe three places in each neighborhood. For example, restaurants, bars, parks, movie theaters, offices, whatever seems appropriate given the description of the neighborhood.",
     "system_instruction": "You are a creative writer, using a detective noir style. Provide the response as JSON in this format: {"places": [{"name": "<NAME>", "neighborhood": "<NEIGHBORHOOD NAME>", "description": "<DESCRIPTION>"]}"
   }
 }
