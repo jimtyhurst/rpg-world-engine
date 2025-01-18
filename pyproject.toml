@@ -45,6 +45,7 @@ where = ["src"]
 pythonpath = [
   "src"
 ]
+#filterwarnings = "ignore:.*legacy is deprecated:DeprecationWarning"
 
 [tool.ruff]
 line-length = 79
