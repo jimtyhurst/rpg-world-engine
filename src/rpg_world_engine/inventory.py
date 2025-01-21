@@ -1,5 +1,11 @@
 """
-TODO: Still need to implement the ability for a Player to add items to their inventory. 
+TODO: Still need to implement the ability for a Player to add items to their inventory.
+
+Most of this inventory code is from a notebook 'L4: JSON Game Mechanics' in
+a short course taught through DeepLearning.AI:
+Niki Birkner (together.ai) and Nick Walton (AI Dungeon). 2024.
+Building an AI-Powered Game.
+https://learn.deeplearning.ai/courses/building-an-ai-powered-game/
 """
 
 import dotenv

@@ -1,6 +1,9 @@
 # rpg-world-engine
 
-Builds and runs text-based Role-Playing Games, moderated by a Large Language Model.
+Builds and runs text-based Role-Playing Games, moderated by a Large Language
+Model. This project is intended to be a simple proof of concept that serves
+as a playground for experimenting with different LLMs and different
+LLM app frameworks.
 
 **Project status**
 
@@ -93,9 +96,12 @@ facilitating an adventure.
 
 ## Annotated Bibliography
 
-- Niki Birkner, Nick Walton. 2024-11-20. Building an AI-Powered Game.
+- Niki Birkner ([together.ai](https://www.together.ai/))
+  and Nick Walton ([AI Dungeon](https://aidungeon.com/)).
+  2024-11-20.
+  Building an AI-Powered Game.<br>
   https://learn.deeplearning.ai/courses/building-an-ai-powered-game/
-  - A short tutorial offered through DeepLearning.AI.
+  - A short tutorial offered through [DeepLearning.AI](https://www.deeplearning.ai/).
   - Much of the infrastructure of our project is based on the material
     in this tutorial, especially:
     - the creation of a hierarchical world model that was presented in the
