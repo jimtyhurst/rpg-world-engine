@@ -45,7 +45,6 @@ def run_action(user_prompt, history, game_state):
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": world_info}
     ]
-    print(f"\n*****\n{history=}\n*****\n{type(history)=}\n")  # DEBUG
     for action in history:
         messages.append({"role": action["role"], "content": action["content"]})
         messages.append({"role": action["role"], "content": action["content"]})
