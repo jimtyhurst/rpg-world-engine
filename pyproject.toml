@@ -45,6 +45,7 @@ where = ["src"]
 pythonpath = [
   "src"
 ]
+python_functions = ["expect_", "expects_", "test_"]
 #filterwarnings = "ignore:.*legacy is deprecated:DeprecationWarning"
 
 [tool.ruff]

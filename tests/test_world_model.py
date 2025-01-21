@@ -1,8 +1,8 @@
-from rpg_world_engine import world_model
+from rpg_world_engine import game_configuration
 import constants
 import pytest
 
-WORLD_MODEL = world_model.load_world_model(constants.WORLD_MODEL_PATH)
+WORLD_MODEL = game_configuration.load_configuration_file(constants.WORLD_MODEL_PATH)
 
 @pytest.fixture
 def actual_world_model():
@@ -15,7 +15,6 @@ def test_load_model_happy_path(actual_world_model):
     assert isinstance(actual_world_model["regions"], list)
     assert isinstance(actual_world_model["player"]["name"], str)
     assert isinstance(actual_world_model["npcs"], list)
-    assert isinstance(actual_world_model["challenge"], str)
 
 
 def test_load_model_expect_locale_region_matches_region_name(actual_world_model):

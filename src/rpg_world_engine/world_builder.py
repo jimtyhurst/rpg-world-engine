@@ -1,5 +1,7 @@
 """
 Functions for building a hierarchical world model.
+
+TODO: Make a sequence of calls to build the model: world, regions, locales, player, NPCs.
 """
 
 from collections.abc import Mapping
