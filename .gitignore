@@ -163,3 +163,14 @@ cython_debug/
 
 # Mac OS-specific storage files
 .DS_Store
+
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Gradio-generated files. https://www.gradio.app/docs
+.gradio/
