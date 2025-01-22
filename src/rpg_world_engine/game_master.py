@@ -68,7 +68,7 @@ def run_action(user_prompt, history, game_state):
     )
     response_dict = json.loads(model_response.text)
     logger.debug(f"{response_dict=}")
-    game_master_response = " ".join([value for value in response_dict.values()])
+    game_master_response = " ".join([f'{value}' for value in response_dict.values()])
     return game_master_response
 
 
