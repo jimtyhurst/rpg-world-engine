@@ -5,6 +5,11 @@ from google.genai import types
 import json
 import gradio
 from rpg_world_engine import game, game_configuration, inventory, policy
+from rpg_world_engine import rpg_logging
+
+import logging
+logger = rpg_logging.get_logger(__name__)
+logger.setLevel(logging.DEBUG)
 
 
 # TODO: Need a better way to inject the LLM.
@@ -62,11 +67,13 @@ def run_action(user_prompt, history, game_state):
         ),
     )
     response_dict = json.loads(model_response.text)
+    logger.debug(f"{response_dict=}")
     game_master_response = " ".join([value for value in response_dict.values()])
     return game_master_response
 
 
 def main_loop(user_prompt, history):
+    logger.debug(f"{user_prompt=}")
     game_master_response = run_action(user_prompt, history, game_state)
     if not policy.is_safe(game_master_response, game_state["age_appropriate_rating"]):
         return f"Response is not appropriate for this game's rating of {game_state["age_appropriate_rating"]}."
