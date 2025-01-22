@@ -22,7 +22,7 @@ J --> A
 
 ### Prompt is safe?
 
-Validate the user prompt. Use a chain of classifiers as filters:
+Validate the user prompt. Use a chain of classifiers as filters. These are more focused than relying on the Game Master's LLM to detect these conditions.
 
 - is_off_topic
 - is_hate_speech
@@ -45,7 +45,6 @@ For example,
 ### Response is safe?
 
 - Use the same set of filters as for user input??
-    - Maybe some of these are detected by the LLM from the user prompt and reported back in the LLM response?
 - Gemini LLM provides some safety ratings in its response. For example,
     - HARM_CATEGORY_HATE_SPEECH
     - HARM_CATEGORY_DANGEROUS_CONTENT
