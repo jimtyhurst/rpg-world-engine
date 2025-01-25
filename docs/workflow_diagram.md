@@ -46,9 +46,15 @@ For example,
 
 - Use the same set of filters as for user input??
 - Gemini LLM provides some safety ratings in its response. For example,
-    - HARM_CATEGORY_HATE_SPEECH
-    - HARM_CATEGORY_DANGEROUS_CONTENT
-    - See details here:
-        - https://ai.google.dev/gemini-api/docs/safety-settings
-        - https://ai.google.dev/gemini-api/docs/safety-settings#safety-filters
-        - https://ai.google.dev/gemini-api/docs/safety-guidance
+  - HARM_CATEGORY_HATE_SPEECH
+  - HARM_CATEGORY_DANGEROUS_CONTENT
+  - See details here:
+    - https://ai.google.dev/gemini-api/docs/safety-settings
+    - https://ai.google.dev/gemini-api/docs/safety-settings#safety-filters
+    - https://ai.google.dev/gemini-api/docs/safety-guidance
+
+_Factors to consider_: Anthropic's
+[Acceptable Use Policy](https://www.anthropic.com/legal/aup)
+provides a good list of risks to consider when using LLMs.
+While those risks are associated with actions in the real world,
+it also makes sense to avoid some of these harms in game interactions.
