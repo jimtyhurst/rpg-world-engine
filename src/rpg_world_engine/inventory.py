@@ -48,8 +48,7 @@ assert INVENTORY_LLM_NAME is not None
 API_KEY = os.getenv("GEMINI_API_KEY")
 assert API_KEY is not None
 INVENTORY_LLM_CLIENT = genai.Client(
-    api_key=API_KEY,
-    http_options={"api_version": "v1alpha"}
+    api_key=API_KEY, http_options={"api_version": "v1alpha"}
 )
 
 
@@ -78,21 +77,20 @@ def detect_inventory_changes(game_state, output):
     return []
 
 
-
 def update_inventory(inventory, item_updates):
-    update_msg = ''
+    update_msg = ""
     for update in item_updates:
-        name = update['name']
-        change_amount = update['change_amount']
+        name = update["name"]
+        change_amount = update["change_amount"]
         if change_amount > 0:
             if name not in inventory:
                 inventory[name] = change_amount
             else:
                 inventory[name] += change_amount
-            update_msg += f'\nInventory: {name} +{change_amount}'
+            update_msg += f"\nInventory: {name} +{change_amount}"
         elif name in inventory and change_amount < 0:
             inventory[name] += change_amount
-            update_msg += f'\nInventory: {name} {change_amount}'
+            update_msg += f"\nInventory: {name} {change_amount}"
         if name in inventory and inventory[name] < 0:
             del inventory[name]
     return update_msg
